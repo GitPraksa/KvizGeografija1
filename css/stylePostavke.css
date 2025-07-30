@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.settings-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    text-align: center;
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.settings-card form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.settings-card form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.main-btn {
+    background: #007bff;
+}
+
+.main-btn:hover {
+    background: #0056b3;
+}
+
+.delete-btn {
+    background: #e63946;
+}
+
+.delete-btn:hover {
+    background: #b71c1c;
+}
+
+.danger-zone p {
+    color: #a00;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.stats {
+    list-style: none;
+    padding: 0;
+}
+
+.stats li {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.back-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-home {
+    display: inline-block;
+    background: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.back-home:hover {
+    background: #495057;
+}
+
+
+.settings-card button,
+.settings-card a.back-home {
+    display: block;
+    width: 100%;          
+    text-align: center;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.poruka {
+    width: fit-content;
+    max-width: 90%;
+    margin: 10px auto; 
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.poruka.greska {
+    color: #b22222; 
+}
+
+.poruka.uspjeh {
+    color: #155724;
+}

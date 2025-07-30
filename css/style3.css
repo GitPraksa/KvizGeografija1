@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+}
+
+body {
+  background: #e6eef3;
+  color: #333;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #e6eef3;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-btn:hover {
+  background: #e66900;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(-5deg); 
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  font-family: 'Pacifico', cursive;
+}
+
+.right-header {
+  display: flex;
+  gap: 10px;
+}
+
+.header-btn {
+  background: #ff7b00;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-btn:nth-child(2),
+.header-btn:nth-child(3) {
+  background: #444;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  background: #f2f2f2;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #ff7b00;
+}
+
+.card-list {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.horizontal-card {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.horizontal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.horizontal-card[data-razina="1"] {
+  border-left: 8px solid #2ecc71; /* zelena za osnovnu */
+}
+.horizontal-card[data-razina="2"] {
+  border-left: 8px solid #f1c40f; /* žuta za srednju */
+}
+.horizontal-card[data-razina="3"] {
+  border-left: 8px solid #e74c3c; /* crvena za tešku */
+}
+
+.card-left {
+  flex: 1 1 60%;
+}
+
+.image-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 200px;
+}
+
+.image-text-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-text-block {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.card-buttons button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.card-buttons button:nth-child(1) {
+  background-color: #2ecc71;
+}
+.card-buttons button:nth-child(2) {
+  background-color: #3498db;
+}
+.card-buttons button:nth-child(3) {
+  background-color: #e67e22;
+}
+
+.card-buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .horizontal-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .card-left {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+
+  .card-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .card-buttons button {
+    flex: 1 1 calc(33% - 10px);
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-bar a {
+    padding: 5px 0;
+  }
+}
+
+body, .card-list {
+  background-color: #e6eef3;
+}
+
+
